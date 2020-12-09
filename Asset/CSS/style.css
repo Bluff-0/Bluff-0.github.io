@@ -6,14 +6,18 @@ body {
   margin: 0;
   font: normal 100% 'Poppins', sans-serif;
 }
+.header {
+    height: 50%;
+}
 canvas {
   display: block;
   vertical-align: bottom;
+  height: 70% !important;
 }
 #particles-js {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 70%;
+  height: 100%;
   background-color: rgb(35, 38, 55);
   background-image: url("");
   background-repeat: no-repeat;
@@ -67,4 +71,11 @@ canvas {
     height: 50vh;
     width: 50vh;
     filter: grayscale(.7) brightness(.7);
+}
+.main-short-description {
+    background-color: #1F2233;
+}
+.main-tabpanel-container {
+    background-color: #313550;
+    padding: 0;
 }
