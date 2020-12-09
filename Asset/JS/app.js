@@ -61,6 +61,10 @@ var particalConfiguration = {
 
 /* Function Definition */
 
+const redirectTo= (url) => {
+    window.location.href= url;
+}
+
 /* Data Rendering */
 
 particlesJS("particles-js", particalConfiguration);

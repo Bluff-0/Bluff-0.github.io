@@ -1,16 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
-    font: normal 100% 'Poppins', sans-serif;
+  font: normal 100% "Poppins", sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  font: normal 100% 'Poppins', sans-serif;
+  font: normal 100% "Poppins", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: .5vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+  width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #066892;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #054966;
+}
+
 .header {
-    height: 50%;
+  height: 50%;
 }
 canvas {
   display: block;
@@ -27,82 +46,148 @@ canvas {
   background-position: 50% 50%;
   /* position: relative; */
 }
+nav.navbar {
+  z-index: 999;
+}
 .page-top-navigation {
-    width: 90%;
-    margin: auto auto;
+  width: 90%;
+  margin: auto auto;
 }
 .navbar-brand {
-    font-size: 2rem;
-    font-weight: 6  00;
+  font-size: 2rem;
+  font-weight: 6 00;
 }
 .page-top-navigation-icon {
-    filter: invert(76%) sepia(86%) saturate(2043%) hue-rotate(352deg) brightness(106%) contrast(104%);
-    height: 4vh;
-    width: 4vh;
+  filter: invert(76%) sepia(86%) saturate(2043%) hue-rotate(352deg)
+    brightness(106%) contrast(104%);
+  height: 4vh;
+  width: 4vh;
 }
 .header-description {
-    position: absolute;
-    z-index: 9;
-    color: #fff;
-    top: 50%;
-    left: 15%;
-    transform: translate(-20%, -50%);
-    cursor: default;
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  top: 50%;
+  left: 15%;
+  transform: translate(-20%, -50%);
+  cursor: default;
 }
 .head-desc-intro {
-    color: #ffc107;
-    font-size: 1.5rem;
+  color: #ffc107;
+  font-size: 1.5rem;
 }
 .head-desc-name {
-    color: #fff;
-    font-size: 3.5rem;
+  color: #fff;
+  font-size: 3.5rem;
 }
 .head-desc-designation {
-    color: #fff;
-    font-size: 1.5rem;
-}.header-image {
-    position: absolute;
-    background-image: url("/Asset/Images/Inserts/me.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 9;
-    bottom: 0;
-    right: 10%;
-    cursor: default;
-    height: 50vh;
-    width: 50vh;
-    filter: grayscale(.7) brightness(.7);
+  color: #fff;
+  font-size: 1.5rem;
 }
+.header-image {
+  position: absolute;
+  background-image: url("/Asset/Images/Inserts/me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+  bottom: 0;
+  right: 10%;
+  cursor: default;
+  height: 50vh;
+  width: 50vh;
+  filter: grayscale(0.7) brightness(0.7);
+}
+
 #pills-tab {
-    height: 5vh;
+  height: 5vh;
 }
 .main-short-description {
-    background-color: #1F2233;
+  background-color: #1f2233;
 }
 .main-tabpanel-container {
-    background-color: #313550;
-    padding: 0;
+  background-color: #313550;
+  padding: 0;
 }
 .main-desc-panel img {
-    width: 100%;
+  width: 100%;
 }
 .desc-text {
-    padding: 5vh 3vw;
-    text-align: justify;
+  padding: 5vh 3vw;
+  text-align: justify;
 }
 .desc-text-top {
-    color: #ffc107;
-    font-size: 1.2rem;
+  color: #ffc107;
+  font-size: 1.2rem;
 }
 .desc-text-header {
-    color: #fff;
-    font-size: 2rem;
+  color: #fff;
+  font-size: 2rem;
 }
 .desc-text-details {
-    color: #ccc;
-    font-size: 1rem;
+  color: #ccc;
+  font-size: 1rem;
 }
 .desc-text-details b {
-    color: #ffc107;
+  color: #ffc107;
+}
+
+.contact-section {
+  background-color: #22273b;
+  padding: 7vh 0;
+}
+.contact-slabs {
+  width: 70%;
+  margin: auto auto;
+}
+.section-info {
+  padding: 0 0 2vh 0;
+}
+.section-info small {
+  font-size: 1rem;
+  color: #ffc107;
+}
+.section-info span {
+  font-size: 2rem;
+  color: #ccc;
+  font-weight: 600;
+}
+.contact-cards-container {
+  width: 100%;
+}
+.contact-card {
+  background-color: #2c304b;
+  border: 1px solid #f6c783;
+  margin: 1vw;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.contact-card-column-text,
+.contact-card-column-logo {
+  padding: 1vh 1vw;
+}
+.contact-media-name {
+  color: #ccc;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact-media-description {
+  color: #ffc107;
+  font-size: 1rem;
+}
+.contact-card-column-logo .iconify {
+  height: 3rem;
+  width: 3rem;
+  color: #000;
+}
+.contact-card:hover {
+  background-color: rgba(246, 199, 131, 0.9);
+}
+.contact-card:hover .contact-media-name {
+  color: #000;
+}
+.contact-card:hover .contact-media-description {
+  color: #555;
 }
