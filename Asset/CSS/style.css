@@ -2,6 +2,9 @@
 * {
     font: normal 100% 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font: normal 100% 'Poppins', sans-serif;
@@ -11,7 +14,6 @@ body {
 }
 canvas {
   display: block;
-  vertical-align: bottom;
   height: 70% !important;
 }
 #particles-js {
@@ -72,10 +74,35 @@ canvas {
     width: 50vh;
     filter: grayscale(.7) brightness(.7);
 }
+#pills-tab {
+    height: 5vh;
+}
 .main-short-description {
     background-color: #1F2233;
 }
 .main-tabpanel-container {
     background-color: #313550;
     padding: 0;
+}
+.main-desc-panel img {
+    width: 100%;
+}
+.desc-text {
+    padding: 5vh 3vw;
+    text-align: justify;
+}
+.desc-text-top {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+.desc-text-header {
+    color: #fff;
+    font-size: 2rem;
+}
+.desc-text-details {
+    color: #ccc;
+    font-size: 1rem;
+}
+.desc-text-details b {
+    color: #ffc107;
 }

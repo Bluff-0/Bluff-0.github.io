@@ -64,3 +64,14 @@ var particalConfiguration = {
 /* Data Rendering */
 
 particlesJS("particles-js", particalConfiguration);
+
+$(window).scroll( () => {
+    var windscroll = $(this).scrollTop();
+    if (windscroll >= 100) {
+        $('nav').addClass('bg-dark');
+
+    } else {
+
+        $('nav').removeClass('bg-dark');
+    }
+}).scroll()

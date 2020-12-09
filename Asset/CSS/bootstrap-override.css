@@ -1,3 +1,6 @@
+.row {
+    --bs-gutter-x: 0;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #F6C783;
     color: #222;
@@ -8,5 +11,10 @@
     background-color: #2E3049;
 }
 .nav-pills .nav-link {
+    line-height: 5vh;
+    font-size: 1.3rem;
     color: #ccc;
+    border-width: 0 .5px 0 .5px;
+    border-color: rgba(136, 136, 136, .5);
+    border-style: solid;
 }
