@@ -132,8 +132,82 @@ nav.navbar {
   color: #ffc107;
 }
 
-.contact-section {
+.testimonials {
   background-color: #22273b;
+  padding: 7vh 0;
+}
+
+.testimonials-container {
+  width: 70%;
+  margin: auto auto;
+  position: relative;
+}
+
+.owl-carousel .owl-stage{display: flex;}
+.owl-carousel .item {
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+  background-color: #2C3049;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+.owl-carousel .item .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.tm-card-head {
+  display: flex;
+  justify-content: space-between;
+}
+.tm-card-header-author {
+  display: inline-flex;
+}
+.avatar {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  margin: 1vh;
+  padding: .5vh;
+  border: 2px dashed #ccc;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+.avatar:hover {
+  padding: .25vh;
+  border: 2px dotted #fff;
+}
+.avatar img {
+  border-radius: 50%;
+}
+.tm-author-details {
+  margin: 1vh 0 auto;
+}
+.tm-author-details span {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.tm-author-details small {
+  font-size: 1rem;
+  color: #ffc107;
+}
+.quote-icon .iconify {
+  height: 8vh;
+  width: 8vh;
+  color: #000;
+  padding: 1vh;
+}
+
+.tm-card-body {
+  padding: 1vh 1vw;
+  text-align: justify;
+  color: #ccc;
+}
+
+
+.contact-section {
+  background-color: #202334;
   padding: 7vh 0;
 }
 .contact-slabs {

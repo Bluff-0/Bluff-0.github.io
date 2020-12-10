@@ -18,3 +18,24 @@
     border-color: rgba(136, 136, 136, .5);
     border-style: solid;
 }
+.owl-carousel .owl-nav button span {
+    font-weight: 600;
+}
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel .owl-nav button.owl-next {
+    padding: 1vh 1vw !important;
+    margin: auto .5vw;
+    border: 1px solid #ffc107;
+    color: #ccc;
+    border-radius: 8px;
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 0;
+    top: -7vh;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    right: 7vh;
+    top: -7vh;
+}

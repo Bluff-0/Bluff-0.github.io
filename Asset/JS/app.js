@@ -59,24 +59,37 @@ var particalConfiguration = {
     retina_detect: true
 }
 
+var owlCarouselObject = {
+    loop: false,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        1280: {
+            items: 2
+        }
+    }
+}
 /* Function Definition */
 
-const redirectTo= (url) => {
-    window.location.href= url;
+const redirectTo = (url) => {
+    window.location.href = url;
 }
 
-const shapeContactCards= (itemsInColumn) => {
-    let contactCards= document.querySelector('.contact-cards-container').children;
-    for( let items of contactCards) items.className=`col-sm-${12/itemsInColumn}`;
+const shapeContactCards = (itemsInColumn) => {
+    let contactCards = document.querySelector('.contact-cards-container').children;
+    for (let items of contactCards) items.className = `col-sm-${12 / itemsInColumn}`;
 }
 
 /* Data Rendering */
 
 particlesJS("particles-js", particalConfiguration);
 
-shapeContactCards(screen.width<=1600?2:3);
+shapeContactCards(screen.width <= 1600 ? 2 : 3);
 
-$(window).scroll( () => {
+$(window).scroll(() => {
     var windscroll = $(this).scrollTop();
     if (windscroll >= 100) {
         $('nav').addClass('bg-dark');
@@ -86,3 +99,5 @@ $(window).scroll( () => {
         $('nav').removeClass('bg-dark');
     }
 }).scroll()
+
+$('.owl-carousel').owlCarousel(owlCarouselObject)
