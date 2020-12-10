@@ -65,9 +65,16 @@ const redirectTo= (url) => {
     window.location.href= url;
 }
 
+const shapeContactCards= (itemsInColumn) => {
+    let contactCards= document.querySelector('.contact-cards-container').children;
+    for( let items of contactCards) items.className=`col-sm-${12/itemsInColumn}`;
+}
+
 /* Data Rendering */
 
 particlesJS("particles-js", particalConfiguration);
+
+shapeContactCards(screen.width<=1600?2:3);
 
 $(window).scroll( () => {
     var windscroll = $(this).scrollTop();

@@ -191,3 +191,55 @@ nav.navbar {
 .contact-card:hover .contact-media-description {
   color: #555;
 }
+
+footer {
+  background-color: #333450;
+  text-align: center;
+  padding: 2vh 1vw;
+}
+footer .col-sm-1:first-child,
+footer .col-sm-1:last-child {
+  background-image: url('../Images/square-dots.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-brand {
+  color: #ccc;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.footer-brand object {
+  height: 8vh;
+  filter: invert(76%) sepia(86%) saturate(2043%) hue-rotate(352deg)
+    brightness(106%) contrast(104%);
+}
+.footer-menu-rebase h1{
+  color: #ccc;
+  font-weight: 600;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  letter-spacing: normal;
+  cursor: default;
+}
+.footer-menu-rebase h1:hover {
+  letter-spacing: 2vw;
+  color: #ffc107;
+}
+.menu-rebase {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4vh auto;
+}
+.footer-menu-rebase a {
+  color: #ccc;
+  font-size: 1rem;
+  text-decoration: none;
+  transition-timing-function: linear;
+}
+.footer-menu-rebase a:hover {
+  color: #ffc107;
+}
+.footer-btn-container button{
+  width: 98%;
+  margin: auto auto;
+}
