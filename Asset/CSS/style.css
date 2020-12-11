@@ -203,6 +203,7 @@ nav.navbar {
   padding: 1vh 1vw;
   text-align: justify;
   color: #ccc;
+  font-style: italic;
 }
 
 
@@ -289,7 +290,6 @@ footer .col-sm-1:last-child {
 }
 .footer-menu-rebase h1{
   color: #ccc;
-  font-weight: 600;
   transition-duration: .2s;
   transition-timing-function: linear;
   letter-spacing: normal;
@@ -308,12 +308,18 @@ footer .col-sm-1:last-child {
   color: #ccc;
   font-size: 1rem;
   text-decoration: none;
+  transition-duration: .2s;
   transition-timing-function: linear;
 }
 .footer-menu-rebase a:hover {
   color: #ffc107;
+  font-size: 1.2rem;
 }
+
 .footer-btn-container button{
   width: 98%;
   margin: auto auto;
+}
+.footer-btn-container h1 {
+  color: #ccc;
 }

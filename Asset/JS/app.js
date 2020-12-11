@@ -1,4 +1,5 @@
 /* Constant Definition */
+const SectionTwoOffset = $('#contact').offset().top;
 
 /* Variable Definition */
 
@@ -98,6 +99,14 @@ $(window).scroll(() => {
 
         $('nav').removeClass('bg-dark');
     }
+    if(windscroll > SectionTwoOffset) {
+        $(".connect").addClass("active");
+        $(".brief").removeClass("active");
+    }
+    else {
+        $(".brief").addClass("active");
+        $(".connect").removeClass("active");
+    }
 }).scroll()
 
-$('.owl-carousel').owlCarousel(owlCarouselObject)
+$('.owl-carousel').owlCarousel(owlCarouselObject);
