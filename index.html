@@ -17,8 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./Asset/CSS/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="./Asset/CSS/widescreenstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 1279px) and (min-width: 769px)"
+        href="./Asset/CSS/phonescreenstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 786px)" href="./Asset/CSS/phonescreenstyle.css">
     <link rel="stylesheet" href="./Asset/CSS/bootstrap-override.css">
+    <link rel="stylesheet" href="./Asset/CSS/owl-override.css">
 </head>
 
 <body>
@@ -48,18 +52,20 @@
                                 <a class="nav-link" href="#">
                                     <span class="iconify" data-icon="fa-solid:laptop-code"
                                         data-inline="false"></span>&ensp;
-                                    Work
+                                    Skillset & Workflow
                                 </a>&emsp;
                                 <a class="nav-link" href="#">
                                     <span class="iconify" data-icon="cryptocurrency:exp" data-inline="false"></span>
                                     Experiences
                                 </a>&emsp;
                                 <a class="nav-link connect" href="#contact">
-                                    <span class="iconify" data-icon="ic:baseline-connect-without-contact" data-inline="false"></span>&ensp;
+                                    <span class="iconify" data-icon="ic:baseline-connect-without-contact"
+                                        data-inline="false"></span>&ensp;
                                     Connect
                                 </a>&emsp;
                                 <button class="btn btn-outline-warning me-2" type="button">
-                                    <span class="iconify" data-icon="ic:twotone-bluetooth-connected" data-inline="false"></span>
+                                    <span class="iconify" data-icon="ic:twotone-bluetooth-connected"
+                                        data-inline="false"></span>
                                     Catch-up
                                 </button>
                             </div>
@@ -78,6 +84,8 @@
 
                 <main class="header-image"></main>
             </div>
+
+            </div>
         </section>
     </header>
 
@@ -91,11 +99,11 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Work Field</a>
+                        aria-controls="pills-profile" aria-selected="false">Work-Field</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
-                        aria-controls="pills-contact" aria-selected="false">Contact me for</a>
+                        aria-controls="pills-contact" aria-selected="false">Contact For</a>
                 </li>
             </ul>
             <div class="tab-content main-short-desc-details" id="pills-tabContent">
@@ -395,8 +403,7 @@
         <div class="col-sm-2 footer-btn-container">
             <h1>Schedule?</h1>
             <div>
-                <button type="button" class="btn btn-outline-warning btn-lg btn-block"
-                    onclick="return false;">
+                <button type="button" class="btn btn-outline-warning btn-lg btn-block" onclick="return false;">
                     <span class="iconify" data-icon="ic:twotone-bluetooth-connected" data-inline="false"></span>
                     &ensp;Catch-Up&ensp;
                 </button>

@@ -92,10 +92,13 @@ shapeContactCards(screen.width <= 1600 ? 2 : 3);
 
 $(window).scroll(() => {
     var windscroll = $(this).scrollTop();
-    if (windscroll >= 100) {
+    if (windscroll >= 100 && screen.width > 1280) 
+    {
         $('nav').addClass('bg-dark');
 
-    } else {
+    }
+    else if(windscroll <= 100 && screen.width > 1280)
+    {
 
         $('nav').removeClass('bg-dark');
     }
@@ -110,3 +113,11 @@ $(window).scroll(() => {
 }).scroll()
 
 $('.owl-carousel').owlCarousel(owlCarouselObject);
+
+if(screen.width<1280)
+{
+    // document.getElementsByTagName('body')[0].innerHTML= "<h2>What did it Cost? <br> Everything!</h2>"+
+    // "<br><br><br> <h1>I need some time to create mobile compatible website. Use your laptop till then to stalk me.</h1>"; 
+    let navigation= document.getElementById('particles-js').children[0];
+    navigation.classList.add('bg-dark');
+}

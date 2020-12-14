@@ -143,20 +143,6 @@ nav.navbar {
   position: relative;
 }
 
-.owl-carousel .owl-stage{display: flex;}
-.owl-carousel .item {
-  border: 1px solid #ffc107;
-  border-radius: 10px;
-  background-color: #2C3049;
-  flex: 1 0 auto;
-  height: 100%;
-}
-
-.owl-carousel .item .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .tm-card-head {
   display: flex;
   justify-content: space-between;
