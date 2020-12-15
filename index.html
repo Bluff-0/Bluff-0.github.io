@@ -23,13 +23,15 @@
     <link rel="stylesheet" media="screen and (max-width: 786px)" href="./Asset/CSS/phonescreenstyle.css">
     <link rel="stylesheet" href="./Asset/CSS/bootstrap-override.css">
     <link rel="stylesheet" href="./Asset/CSS/owl-override.css">
+    <link rel="stylesheet" href="./Asset/CSS/spinner.css">
 </head>
 
-<body>
-    <header class="row header">
-        <section>
-            <div id="particles-js">
-                <!-- Navigation Panel -->
+<body onload="makeDelay()">
+    <div class="spinner"></div>
+    <div id="completeScreen" style="visibility: hidden;">
+        <header class="row header">
+            <section>
+                <div id="particles-js"></div>
                 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
                     <div class="container-fluid page-top-navigation">
                         <a class="navbar-brand" href="#">
@@ -55,7 +57,8 @@
                                     Skillset & Workflow
                                 </a>&emsp;
                                 <a class="nav-link" href="#">
-                                    <span class="iconify" data-icon="cryptocurrency:exp" data-inline="false"></span>
+                                    <span class="iconify" data-icon="cryptocurrency:exp"
+                                        data-inline="false"></span>&ensp;
                                     Experiences
                                 </a>&emsp;
                                 <a class="nav-link connect" href="#contact">
@@ -72,355 +75,363 @@
                         </div>
                     </div>
                 </nav>
-
-                <!-- Header Description Panel -->
-                <main class="header-description">
-                    <span class="head-desc-intro">Hello, I'm</span>
-                    <br>
-                    <span class="head-desc-name">Saptarshi <br> Mazumdar</span>
-                    <br>
-                    <span class="head-desc-designation">Student</span>
-                </main>
-
-                <main class="header-image"></main>
-            </div>
-
-            </div>
-        </section>
-    </header>
-
-    <main class="row main-short-description">
-        <div class="col-sm-2"></div>
-        <section class="main-tabpanel-container col-sm-8">
-            <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
-                        aria-controls="pills-home" aria-selected="true">About</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
-                        aria-controls="pills-profile" aria-selected="false">Work-Field</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
-                        aria-controls="pills-contact" aria-selected="false">Contact For</a>
-                </li>
-            </ul>
-            <div class="tab-content main-short-desc-details" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="row main-desc-panel">
-                        <picture class="col-sm-6">
-                            <img src="./Asset/Images/Inserts/man-sitting-2.png" alt="">
-                        </picture>
-                        <div class="col-sm-6 desc-text">
-                            <small class="desc-text-top">About Me</small>
-                            <br><br>
-                            <span class="desc-text-header">Summary</span>
-                            <br>
-                            <span class="desc-text-details">
-                                I'm currently pursing Bachelor in Technology in <b>Computer Science</b> Major
-                                with <b>Communication</b> as Minor from <b>Kalinga Institute of Industrial
-                                    Technology, Deemed to be University</b>.
-                                <br>
-                                Skilled in Full Stack Web Development with System Integration, Signal
-                                Processing, RestAPI Connectivity, SQL & NoSQL
-                                Database, Cloud Development using AWS, Linux and Web Scrapping.
-                                <br>
-                                I love to work in <b>User Interface</b> design and to find easy solution
-                                for solve design problems. Few more preferable fields for working are
-                                <b>Integration</b> and <b>Digital Signal Processing</b>.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="row main-desc-panel">
-                        <picture class="col-sm-6">
-                            <img src="./Asset/Images/Inserts/man-sitting.png" alt="">
-                        </picture>
-                        <div class="col-sm-6 desc-text">
-                            <small class="desc-text-top">Recents</small>
-                            <br><br>
-                            <span class="desc-text-header">Fields</span>
-                            <br>
-                            <span class="desc-text-details">
-                                <ul>
-                                    <li>Speech Processing</li>
-                                    <li>Machine Learning & Deep Learning Modelling</li>
-                                    <li>EEG Signal Analysis, Classification & Filter Theory</li>
-                                    <li>Full Stack Web Development with System Integration</li>
-                                    <li>Web Scrapping & AutoScraper Building</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <div class="row main-desc-panel">
-                        <picture class="col-sm-6">
-                            <img src="./Asset/Images/Inserts/man-calling.png" alt="">
-                        </picture>
-                        <div class="col-sm-6 desc-text">
-                            <small class="desc-text-top">Contact Me</small>
-                            <br><br>
-                            <span class="desc-text-header">Where I can Help</span>
-                            <br>
-                            <span class="desc-text-details">
-                                <ul>
-                                    <li>Collaborating any <b>Open Sourced</b> Projects</li>
-                                    <li>Joining any Non-Profit Organization</li>
-                                    <li>Grabbing a Coffee</li>
-                                </ul>
-                            </span>
-                            <br><br>
-                            <a class="btn btn-outline-warning">Contact Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="col-sm-2"></div>
-    </main>
-
-
-    <main class="row testimonials">
-        <section class="testimonials-container">
-            <div class="section-info">
-                <small>Testimonials</small>
-                <br>
-                <span>Did they Recommend?</span>
-            </div>
-            <div class="row">
-                <div class="owl-carousel">
-                    <div class="item">
+                <section class="header-description-container">
+                    <main class="header-description">
                         <div class="row">
-                            <div class="tm-card-head">
-                                <div class="tm-card-header-author">
-                                    <picture class="avatar">
-                                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGRebqeAdTfZA/profile-displayphoto-shrink_200_200/0/1602672126328?e=1613001600&v=beta&t=1OwR6FW8OlMVr1G7G3-WzNJ6YouBrO51QRTHOyXRU_o"
-                                            alt="">
-                                    </picture>
-                                    &emsp;
-                                    <div class="tm-author-details">
-                                        <span>Meher Kalyani Rao</span>
-                                        <br>
-                                        <small>Sales & Marketing Specialist</small>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4 header-description-text">
+                                <span class="head-desc-intro">Hello, I'm</span>
+                                <br>
+                                <span class="head-desc-name">Saptarshi <br> Mazumdar</span>
+                                <br>
+                                <span class="head-desc-designation">Student</span>
+                            </div>
+                            <div class="col-sm-2">&nbsp;</div>
+                            <div class="col-sm-4">
+                                <main class="header-image"></main>
+                            </div>
+                            <div class="col-sm-1" id="pushSocial"></div>
+                        </div>
+                    </main>
+                </section>
+            </section>
+        </header>
+
+        <main class="row main-short-description">
+            <div class="col-sm-2"></div>
+            <section class="main-tabpanel-container col-sm-8">
+                <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home"
+                            role="tab" aria-controls="pills-home" aria-selected="true">About</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">Work-Field</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact"
+                            role="tab" aria-controls="pills-contact" aria-selected="false">Contact For</a>
+                    </li>
+                </ul>
+                <div class="tab-content main-short-desc-details" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="row main-desc-panel">
+                            <picture class="col-sm-6">
+                                <img src="./Asset/Images/Inserts/man-sitting-2.png" alt="">
+                            </picture>
+                            <div class="col-sm-6 desc-text">
+                                <small class="desc-text-top">About Me</small>
+                                <br><br>
+                                <span class="desc-text-header">Summary</span>
+                                <br>
+                                <span class="desc-text-details">
+                                    I'm currently pursing Bachelor in Technology in <b>Computer Science</b> Major
+                                    with <b>Communication</b> as Minor from <b>Kalinga Institute of Industrial
+                                        Technology, Deemed to be University</b>.
+                                    <br>
+                                    Skilled in Full Stack Web Development with System Integration, Signal
+                                    Processing, RestAPI Connectivity, SQL & NoSQL
+                                    Database, Cloud Development using AWS, Linux and Web Scrapping.
+                                    <br>
+                                    I love to work in <b>User Interface</b> design and to find easy solution
+                                    for solve design problems. Few more preferable fields for working are
+                                    <b>Integration</b> and <b>Digital Signal Processing</b>.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row main-desc-panel">
+                            <picture class="col-sm-6">
+                                <img src="./Asset/Images/Inserts/man-sitting.png" alt="">
+                            </picture>
+                            <div class="col-sm-6 desc-text">
+                                <small class="desc-text-top">Recents</small>
+                                <br><br>
+                                <span class="desc-text-header">Fields</span>
+                                <br>
+                                <span class="desc-text-details">
+                                    <ul>
+                                        <li>Speech Processing</li>
+                                        <li>Machine Learning & Deep Learning Modelling</li>
+                                        <li>EEG Signal Analysis, Classification & Filter Theory</li>
+                                        <li>Full Stack Web Development with System Integration</li>
+                                        <li>Web Scrapping & AutoScraper Building</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="row main-desc-panel">
+                            <picture class="col-sm-6">
+                                <img src="./Asset/Images/Inserts/man-calling.png" alt="">
+                            </picture>
+                            <div class="col-sm-6 desc-text">
+                                <small class="desc-text-top">Contact Me</small>
+                                <br><br>
+                                <span class="desc-text-header">Where I can Help</span>
+                                <br>
+                                <span class="desc-text-details">
+                                    <ul>
+                                        <li>Collaborating any <b>Open Sourced</b> Projects</li>
+                                        <li>Joining any Non-Profit Organization</li>
+                                        <li>Grabbing a Coffee</li>
+                                    </ul>
+                                </span>
+                                <br><br>
+                                <a class="btn btn-outline-warning">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-sm-2"></div>
+        </main>
+
+
+        <main class="row testimonials">
+            <section class="testimonials-container">
+                <div class="section-info">
+                    <small>Testimonials</small>
+                    <br>
+                    <span>Did they Recommend?</span>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="row">
+                                <div class="tm-card-head">
+                                    <div class="tm-card-header-author">
+                                        <picture class="avatar">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGRebqeAdTfZA/profile-displayphoto-shrink_200_200/0/1602672126328?e=1613001600&v=beta&t=1OwR6FW8OlMVr1G7G3-WzNJ6YouBrO51QRTHOyXRU_o"
+                                                alt="">
+                                        </picture>
+                                        &emsp;
+                                        <div class="tm-author-details">
+                                            <span>Meher Kalyani Rao</span>
+                                            <br>
+                                            <small>Sales & Marketing Specialist</small>
+                                        </div>
+                                    </div>
+                                    <div class="quote-icon">
+                                        <span class="iconify" data-icon="bi:chat-quote" data-inline="false"></span>
                                     </div>
                                 </div>
-                                <div class="quote-icon">
-                                    <span class="iconify" data-icon="bi:chat-quote" data-inline="false"></span>
+                                <br>
+                                <div class="tm-card-body">
+                                    Working with Saptarshi is a rare opportunity to come across, He is a self-driven
+                                    personality . He did a marvelous job at GAOTEK. Saptarshi with his great
+                                    motivational
+                                    and inspirational support, enhanced greatly the interdepartmental relations which
+                                    further contributed to better outcomes on the company production.As a colleague I
+                                    recommend him to others who may want to hire his most treasured skills
                                 </div>
                             </div>
-                            <br>
-                            <div class="tm-card-body">
-                                Working with Saptarshi is a rare opportunity to come across, He is a self-driven
-                                personality . He did a marvelous job at GAOTEK. Saptarshi with his great motivational
-                                and inspirational support, enhanced greatly the interdepartmental relations which
-                                further contributed to better outcomes on the company production.As a colleague I
-                                recommend him to others who may want to hire his most treasured skills
-                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="tm-card-head">
-                                <div class="tm-card-header-author">
-                                    <picture class="avatar">
-                                        <img src="https://media-exp1.licdn.com/dms/image/C5103AQFLqyXzhyc-iQ/profile-displayphoto-shrink_200_200/0/1586770440965?e=1613001600&v=beta&t=xiSN9BLvwavcHf3WgBE_KqZr0lRHvef4PuV4-Vt649w"
-                                            alt="">
-                                    </picture>
-                                    &emsp;
-                                    <div class="tm-author-details">
-                                        <span>Suryanarayan Rath</span>
-                                        <br>
-                                        <small>MERN Stack Developer</small>
+                        <div class="item">
+                            <div class="row">
+                                <div class="tm-card-head">
+                                    <div class="tm-card-header-author">
+                                        <picture class="avatar">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C5103AQFLqyXzhyc-iQ/profile-displayphoto-shrink_200_200/0/1586770440965?e=1613001600&v=beta&t=xiSN9BLvwavcHf3WgBE_KqZr0lRHvef4PuV4-Vt649w"
+                                                alt="">
+                                        </picture>
+                                        &emsp;
+                                        <div class="tm-author-details">
+                                            <span>Suryanarayan Rath</span>
+                                            <br>
+                                            <small>MERN Stack Developer</small>
+                                        </div>
+                                    </div>
+                                    <div class="quote-icon">
+                                        <span class="iconify" data-icon="bi:chat-quote" data-inline="false"></span>
                                     </div>
                                 </div>
-                                <div class="quote-icon">
-                                    <span class="iconify" data-icon="bi:chat-quote" data-inline="false"></span>
+                                <br>
+                                <div class="tm-card-body">
+                                    Saptarshi is one of the most hardworking and productive developers I have ever met.
+                                    I am
+                                    very privileged that I got a chance to work with him during graduation. We are in
+                                    the
+                                    same section during my graduation and he is the first person I approach when it
+                                    comes to
+                                    technical specific doubts. He has immense knowledge in the field of Digital signal
+                                    processing and Web development. Eager to learn new skills and working on every
+                                    project
+                                    with the same enthusiasm are some of his best quality. I highly recommend Saptarshi.
                                 </div>
                             </div>
-                            <br>
-                            <div class="tm-card-body">
-                                Saptarshi is one of the most hardworking and productive developers I have ever met. I am
-                                very privileged that I got a chance to work with him during graduation. We are in the
-                                same section during my graduation and he is the first person I approach when it comes to
-                                technical specific doubts. He has immense knowledge in the field of Digital signal
-                                processing and Web development. Eager to learn new skills and working on every project
-                                with the same enthusiasm are some of his best quality. I highly recommend Saptarshi.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <main class="row contact-section" id="contact">
+            <section class="contact-slabs">
+                <div class="section-info">
+                    <small>Socializing</small>
+                    <br>
+                    <span>Am I Audible?</span>
+                </div>
+                <div class="row contact-cards-container">
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('http://bit.ly/linkrishi')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">LinkedIn</span>
+                                <br>
+                                <span class="contact-media-description">Professional Social Profile</span>
                             </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="simple-line-icons:social-linkedin"
+                                    data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('https://orcid.org/0000-0002-2836-2236')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">OrchID</span>
+                                <br>
+                                <span class="contact-media-description">Research Related</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="emojione-monotone:id-button"
+                                    data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('http://bit.ly/gitrishi')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">Github</span>
+                                <br>
+                                <span class="contact-media-description">KLOC Calling</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="codicon:github" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('http://bit.ly/stackrishi')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">Stackoverflow</span>
+                                <br>
+                                <span class="contact-media-description">Technical Forum</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="cib:stackoverflow" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('https://www.hackerrank.com/h1729058')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">HackerRank</span>
+                                <br>
+                                <span class="contact-media-description">Competetive Coding Platform</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="cib:hackerrank" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('https://www.slideshare.net/SaptarshiMazumdar1')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">SlideShare</span>
+                                <br>
+                                <span class="contact-media-description">Presentation Platform</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="fa-brands:slideshare" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('http://bit.ly/saptarshimazumdar')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">GSite</span>
+                                <br>
+                                <span class="contact-media-description">Old Website</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="ant-design:google-outlined" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card"
+                            onclick="redirectTo('https://in.mathworks.com/matlabcentral/profile/authors/16449638')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">MathWorks</span>
+                                <br>
+                                <span class="contact-media-description">MATLAB Forum</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="file-icons:matlab" data-inline="false"></span>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact-card" onclick="redirectTo('mailto:rapsap@outlook.com')">
+                            <div class="contact-card-column-text">
+                                <span class="contact-media-name">Email</span>
+                                <br>
+                                <span class="contact-media-description">rapsap@outlook.com</span>
+                            </div>
+                            <picture class="contact-card-column-logo">
+                                <span class="iconify" data-icon="carbon:mail-all" data-inline="false"></span>
+                            </picture>
                         </div>
                     </div>
                 </div>
+            </section>
+        </main>
+
+
+        <footer class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1">
+                <a class="footer-brand" href="#">
+                    <object type="image/svg+xml" data="./Asset/Images/Icons/compass.svg"
+                        class="d-inline-block align-middle"></object>
+                    <br>Saptarshi's<br>Portfolio
+                </a>
             </div>
-        </section>
-    </main>
-
-
-
-    <main class="row contact-section" id="contact">
-        <section class="contact-slabs">
-            <div class="section-info">
-                <small>Socializing</small>
+            <div class="col-sm-7 footer-menu-rebase">
+                <h1>Binge?</h1>
+                <div class="menu-rebase">
+                    <a href="#" class="menu-rebase-items">Home</a>
+                    <a href="#" class="menu-rebase-items">Work</a>
+                    <a href="#" class="menu-rebase-items">Collaboration</a>
+                    <a href="#" class="menu-rebase-items">Materials</a>
+                    <a href="#" class="menu-rebase-items">Contact</a>
+                </div>
+            </div>
+            <div class="col-sm-2 footer-btn-container">
+                <h1>Schedule?</h1>
+                <div>
+                    <button type="button" class="btn btn-outline-warning btn-lg btn-block" onclick="return false;">
+                        <span class="iconify" data-icon="ic:twotone-bluetooth-connected" data-inline="false"></span>
+                        &ensp;Catch-Up&ensp;
+                    </button>
+                </div>
                 <br>
-                <span>Am I Audible?</span>
-            </div>
-            <div class="row contact-cards-container">
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('http://bit.ly/linkrishi')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">LinkedIn</span>
-                            <br>
-                            <span class="contact-media-description">Professional Social Profile</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="simple-line-icons:social-linkedin"
-                                data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('https://orcid.org/0000-0002-2836-2236')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">OrchID</span>
-                            <br>
-                            <span class="contact-media-description">Research Related</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="emojione-monotone:id-button" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('http://bit.ly/gitrishi')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">Github</span>
-                            <br>
-                            <span class="contact-media-description">KLOC Calling</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="codicon:github" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('http://bit.ly/stackrishi')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">Stackoverflow</span>
-                            <br>
-                            <span class="contact-media-description">Technical Forum</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="cib:stackoverflow" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('https://www.hackerrank.com/h1729058')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">HackerRank</span>
-                            <br>
-                            <span class="contact-media-description">Competetive Coding Platform</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="cib:hackerrank" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('https://www.slideshare.net/SaptarshiMazumdar1')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">SlideShare</span>
-                            <br>
-                            <span class="contact-media-description">Presentation Platform</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="fa-brands:slideshare" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('http://bit.ly/saptarshimazumdar')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">GSite</span>
-                            <br>
-                            <span class="contact-media-description">Old Website</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="ant-design:google-outlined" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card"
-                        onclick="redirectTo('https://in.mathworks.com/matlabcentral/profile/authors/16449638')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">MathWorks</span>
-                            <br>
-                            <span class="contact-media-description">MATLAB Forum</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="file-icons:matlab" data-inline="false"></span>
-                        </picture>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contact-card" onclick="redirectTo('mailto:rapsap@outlook.com')">
-                        <div class="contact-card-column-text">
-                            <span class="contact-media-name">Email</span>
-                            <br>
-                            <span class="contact-media-description">rapsap@outlook.com</span>
-                        </div>
-                        <picture class="contact-card-column-logo">
-                            <span class="iconify" data-icon="carbon:mail-all" data-inline="false"></span>
-                        </picture>
-                    </div>
+                <div>
+                    <button type="button" class="btn btn-outline-warning btn-lg btn-block"
+                        onclick="redirectTo('mailto: rapsap@outlook.com')">Drop a Mail</button>
                 </div>
             </div>
-        </section>
-    </main>
-
-
-    <footer class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-1">
-            <a class="footer-brand" href="#">
-                <object type="image/svg+xml" data="./Asset/Images/Icons/compass.svg"
-                    class="d-inline-block align-middle"></object>
-                <br>Saptarshi's<br>Portfolio
-            </a>
-        </div>
-        <div class="col-sm-7 footer-menu-rebase">
-            <h1>Binge?</h1>
-            <div class="menu-rebase">
-                <a href="#" class="menu-rebase-items">Home</a>
-                <a href="#" class="menu-rebase-items">Work</a>
-                <a href="#" class="menu-rebase-items">Collaboration</a>
-                <a href="#" class="menu-rebase-items">Materials</a>
-                <a href="#" class="menu-rebase-items">Contact</a>
-            </div>
-        </div>
-        <div class="col-sm-2 footer-btn-container">
-            <h1>Schedule?</h1>
-            <div>
-                <button type="button" class="btn btn-outline-warning btn-lg btn-block" onclick="return false;">
-                    <span class="iconify" data-icon="ic:twotone-bluetooth-connected" data-inline="false"></span>
-                    &ensp;Catch-Up&ensp;
-                </button>
-            </div>
-            <br>
-            <div>
-                <button type="button" class="btn btn-outline-warning btn-lg btn-block"
-                    onclick="redirectTo('mailto: rapsap@outlook.com')">Drop a Mail</button>
-            </div>
-            <!-- <br>
-            <div>
-                <button type="button" class="btn btn-outline-warning btn-lg btn-block"
-                    onclick="redirectTo('mailto: rapsap@outlook.com')">Alternate Mail</button>
-            </div> -->
-        </div>
-        <div class="col-sm-1"></div>
-    </footer>
+            <div class="col-sm-1"></div>
+        </footer>
+    </div>
 </body>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

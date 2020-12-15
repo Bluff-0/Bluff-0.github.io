@@ -84,6 +84,13 @@ const shapeContactCards = (itemsInColumn) => {
     for (let items of contactCards) items.className = `col-sm-${12 / itemsInColumn}`;
 }
 
+const makeDelay= () => {
+    setTimeout( function() {
+        document.querySelector('.spinner').style.display= "none";
+        document.querySelector('#completeScreen').style.visibility= "visible";
+    }, 3000);
+}
+
 /* Data Rendering */
 
 particlesJS("particles-js", particalConfiguration);
@@ -118,6 +125,10 @@ if(screen.width<1280)
 {
     // document.getElementsByTagName('body')[0].innerHTML= "<h2>What did it Cost? <br> Everything!</h2>"+
     // "<br><br><br> <h1>I need some time to create mobile compatible website. Use your laptop till then to stalk me.</h1>"; 
-    let navigation= document.getElementById('particles-js').children[0];
+    let navigation= document.querySelector('nav');
     navigation.classList.add('bg-dark');
+    document.getElementById('pushSocial').innerHTML=`<a href="https://t.me/saptarshimazumdar" target="_blank">`+
+    `<span class="iconify" data-icon="bx:bxl-telegram" data-inline="false"></span></a>&emsp;`+
+    `<a href="https://discordapp.com/users/9296"><span class="iconify" data-icon="ion:logo-discord" data-inline="false">`+
+    `</span></a>&emsp;<a href="mailto:rapsap@outlook.com"><span class="iconify" data-icon="cib:mail-ru" data-inline="false"></span></a>`;
 }

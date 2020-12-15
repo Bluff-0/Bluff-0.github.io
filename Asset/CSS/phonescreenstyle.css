@@ -28,19 +28,30 @@ body {
   background: #054966;
 }
 
-canvas {
-  display: block;
-  height: 75% !important;
+.header {
+  height: 100vh;
 }
+
 #particles-js {
-  position: relative;
+  background-color: rgb(35, 38, 55);
   width: 100%;
   height: 100%;
-  background-color: rgb(35, 38, 55);
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease;
 }
 nav.navbar {
   z-index: 999;
@@ -59,14 +70,21 @@ nav.navbar {
   height: 4vh;
   width: 4vh;
 }
+
+.header-description-container {
+  display: table;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
 .header-description {
-  position: absolute;
-  z-index: 9;
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
   color: #fff;
-  top: 60%;
-  left: 15%;
-  transform: translate(-20%, -50%);
   cursor: default;
+  padding-bottom: 15vh;
 }
 .head-desc-intro {
   color: #ffc107;
@@ -81,21 +99,26 @@ nav.navbar {
   font-size: 1rem;
 }
 .header-image {
-    position: absolute;
     background-image: url("/Asset/Images/Inserts/me.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 9;
-    top: 38%;
-    right: 5%;
     cursor: default;
-    height: 15vh;
-    width: 15vh;
     filter: grayscale(0.7) brightness(0.7);
     border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
     border: 1px solid #ffc107;
     background-color: rgba(35, 38, 55, 0.7);
+    margin: auto auto;
+}
+#pushSocial {
+  padding: 2vh 0 0 0;
+}
+#pushSocial a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #pills-tab {
@@ -103,6 +126,7 @@ nav.navbar {
 }
 .main-short-description {
   background-color: #1f2233;
+  z-index: 10;
 }
 .main-tabpanel-container {
   background-color: #313550;
@@ -287,9 +311,12 @@ footer .col-sm-1:last-child {
   color: #ffc107;
 }
 .menu-rebase {
-  display: flex;
+  display: table;
   justify-content: space-evenly;
   margin: 4vh auto;
+}
+.menu-rebase-items {
+  display: table-row;
 }
 .footer-menu-rebase a {
   color: #ccc;
@@ -309,13 +336,4 @@ footer .col-sm-1:last-child {
 }
 .footer-btn-container h1 {
   color: #ccc;
-}
-
-@media only screen and (max-width: 1280px) and (min-width: 768px) {
-    .menu-rebase {
-        display: table;
-    }
-    .menu-rebase-items {
-        display: table-row;
-    }
 }
